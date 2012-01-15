@@ -1,4 +1,6 @@
 BallGame::Application.routes.draw do
+  resources :game_types
+
   resources :teams
 
   resources :games

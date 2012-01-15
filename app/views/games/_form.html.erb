@@ -23,9 +23,6 @@
     <%= f.label :team_2_id %><br />
     <%= collection_select(:game, :team_2_id, Team.all, :id, :name, :prompt => true) %>
   </div>
-  <div class="field">
-    <%= f.label :type %><br />
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
