@@ -1,6 +1,9 @@
 class GamesController < ApplicationController
   # GET /games
   # GET /games.json
+
+include GamesHelper
+
   def index
     @games = Game.all
 
@@ -14,6 +17,8 @@ class GamesController < ApplicationController
   # GET /games/1.json
   def show
     @game = Game.find(params[:id])
+    @team_1 = team_object(@game.team_1_id)
+    @team_2 = team_object(@game.team_2_id)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -81,3 +86,4 @@ class GamesController < ApplicationController
     end
   end
 end
+
