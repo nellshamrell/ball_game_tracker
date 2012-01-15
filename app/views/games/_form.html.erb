@@ -23,6 +23,11 @@
     <%= f.label :team_2_id %><br />
     <%= collection_select(:game, :team_2_id, Team.all, :id, :name, :prompt => true) %>
   </div>
+  <div class="field">
+    <%= f.label :game_type_id %><br />
+    <%= collection_select(:game, :game_type_id, GameType.all, :id, :name, :prompt => true) %>
+  </div>
+ 
   <div class="actions">
     <%= f.submit %>
   </div>
