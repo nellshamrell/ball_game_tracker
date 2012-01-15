@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @game.id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @game.date %>
+</p>
+
+<p>
+  <b>Team 1:</b>
+  <%= @game.team_1_id %>
+</p>
+
+<p>
+  <b>Team 2:</b>
+  <%= @game.team_2_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @game.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
