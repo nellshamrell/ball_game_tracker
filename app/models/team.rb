@@ -1,4 +1,4 @@
 class Team < ActiveRecord::Base
-  has_many :games
+  belongs_to :game
   validates_presence_of :name
 end

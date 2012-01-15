@@ -1,8 +1,8 @@
 class Game < ActiveRecord::Base
-  belongs_to :team
+  has_many :teams
   belongs_to :game_type
 
-  validates_presence_of :date, :team_1_id, :team_2_id
+  validates_presence_of :date, :team_1_id, :team_2_id, :game_type_id
   validate :check_teams
 
   def check_teams
