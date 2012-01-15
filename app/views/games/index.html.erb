@@ -1,4 +1,11 @@
-<h1>Listing games</h1>
+<h1>Take Me Out to the Ball Game!</h1>
+<h3>Current Game Listings</h3>
+
+<table>
+  <td><%= link_to 'Games', games_path %></td>
+  <td><%= link_to 'Teams', teams_path %></td>
+  <td><%= link_to 'Game Types', game_types_path %></td>
+</table>
 
 <table>
   <tr>
@@ -16,8 +23,8 @@
   <tr>
     <td><%= game.id %></td>
     <td><%= game.date %></td>
-    <td><%= game.team_1_id %></td>
-    <td><%= game.team_2_id %></td>
+    <td><%= team_object(game.team_1_id) %></td>
+    <td><%= team_object(game.team_2_id) %></td>
     <td><%= game.game_type.name %></td>
     <td><%= link_to 'Show', game %></td>
     <td><%= link_to 'Edit', edit_game_path(game) %></td>
