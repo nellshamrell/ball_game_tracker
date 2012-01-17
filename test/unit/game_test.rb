@@ -1,3 +1,4 @@
+require 'test/unit'
 
 class GameTest < Test::Unit::TestCase
   # test "the truth" do
@@ -5,6 +6,6 @@ class GameTest < Test::Unit::TestCase
   # end
 
     def test_saved
-      assert Game.save?
+      assert Game.saved?
     end
 end

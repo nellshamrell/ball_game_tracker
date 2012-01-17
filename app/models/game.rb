@@ -8,4 +8,8 @@ class Game < ActiveRecord::Base
   def check_teams
     errors.add(:team_2_id, "cannot be same as Team 1") if team_1_id == team_2_id
   end
+
+  def self.saved?
+    true
+  end
 end
