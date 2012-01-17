@@ -1,4 +1,5 @@
-require 'test_helper'
+#require 'test_helper'
+require 'test/unit'
 
 class GamesControllerTest < ActionController::TestCase
   setup do
