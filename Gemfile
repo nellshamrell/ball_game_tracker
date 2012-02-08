@@ -7,6 +7,9 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+# Authentication
+gem "omniauth"
+gem "omniauth-twitter"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,6 +20,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'client_side_validations'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -31,6 +35,9 @@ group :test, :development do
   gem "rspec-rails", "~> 2.8" 
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'capybara-webkit'
 end
 
 group :cucumber do
