@@ -1,6 +1,9 @@
 require 'bundler/capistrano'
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 set :rvm_type, :user
+set :use_sudo, false
+ssh_options[:forward_agent] = true
+default_run_options[:pty] = true
 require 'rvm/capistrano'
 
 set :application, "ball_game"
