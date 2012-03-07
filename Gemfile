@@ -16,6 +16,7 @@ gem "omniauth-twitter"
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
+  gem 'therubyracer'
   gem 'uglifier'
 end
 
@@ -38,6 +39,7 @@ group :test, :development do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'capybara-webkit'
+  gem 'capistrano'
 end
 
 group :cucumber do
