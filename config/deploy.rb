@@ -15,7 +15,7 @@ role :db,  "localhost", :primary => true # This is where Rails migrations will r
 
 set :port, 2222
 set :user, "vagrant"
-set :deploy_to, "/home/vagrant/sites/recipes"
+set :deploy_to, "/home/vagrant/sites/ball_game"
 set :keep_releases, 5
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
